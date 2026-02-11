@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Prediction Result</h2>
+        <img src="{{ image_path }}" width="200" style="border-radius:10px;"><br><br>
+        <h3 style="color:white;">Predicted: {{ prediction }}</h3>
+        <h3 style="color: :white;">Confidence : {{  confidence}}%</h3>
+        <a href="/dashboard" style="padding:8px 18px;
+                                    background-color:white;
+                                     color:black;
+                                    text-decoration:none;
+                                     border-radius:8px;
+                                    font-weight:bold;
+                                    display:inline-block;
+                                     margin-top:10px;">
+                               Back</a>       
+        
+    </div>
+</body>
+</html>
