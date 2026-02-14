@@ -11,7 +11,7 @@ app.secret_key = "supersecretkey"
 app.config['UPLOAD_FOLDER']='static/uploads'
 
 # Load ML model
-model = load_model("model/blood_model.h5")
+model = load_model("model/blood_model.h5",compile=False)
 #model_path=os.path.join(os.getcwdb(),"model","blood_model.h5")
 #model=load_model(model_path)
 class_names = ['eosinophil', 'lymphocyte', 'monocyte', 'neutrophil']
